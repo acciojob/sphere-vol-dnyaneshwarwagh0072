@@ -9,11 +9,16 @@ label,input{display:block;}
 </style>
 </head>
 <body>
-	<p>Input radius value and get the volume of a sphere.</p>
-	<form action="" method="post" id="MyForm">
-	<label for="radius">Radius</label><input type="text" name="radius" id="radius" required>
-	<label for="volume">Volume</label><input type="text" name="volume" id="volume">
-	<input type="submit" value="Calculate" id="submit">    </form>
+	<h2>Calculate the Volume of a Sphere</h2>
+    <form id="sphereForm">
+        <label for="radius">Radius:</label>
+        <input type="text" id="radius" name="radius">
+        <br><br>
+        <label for="volume">Volume:</label>
+        <input type="text" id="volume" name="volume" readonly>
+        <br><br>
+        <button type="button" onclick="volume_sphere()">Calculate</button>
+    </form>
 	<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
